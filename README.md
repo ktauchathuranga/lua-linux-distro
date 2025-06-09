@@ -6,6 +6,11 @@ This repository contains a minimal Linux distribution built from scratch, featur
 
 This project creates a lightweight Linux system that boots into a custom shell (`init`) implemented in C and assembly. The shell supports basic command execution using system calls (`fork`, `execve`, `waitid`, etc.) and is packaged into an initramfs (`init.cpio`). The Lua interpreter is included, allowing users to run Lua scripts in the environment. The system is built into a bootable ISO image for testing with QEMU or on real hardware.
 
+## How it looks
+
+![Screenshot From 2025-06-10 00-14-31](https://github.com/user-attachments/assets/a47e72c6-cf3b-41ed-a81c-16ff51e0b2e0)
+
+
 ## Features
 - Custom shell written in C (`shell.c`) with x86_64 assembly system call wrappers (`sys.S`).
 - Minimal initramfs (`init.cpio`) containing the shell and Lua interpreter.
